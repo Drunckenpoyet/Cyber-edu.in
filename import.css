@@ -1,0 +1,138 @@
+/* New styles for importance.html page */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 2.5rem 3rem;
+    min-height: 100vh;
+    color: #222;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #1a73e8;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(26, 115, 232, 0.6);
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 3rem;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 18px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(26, 115, 232, 0.15);
+}
+
+.nav-button:hover {
+    background-color: #1a73e8;
+    color: white;
+    border-color: #155ab6;
+    box-shadow: 0px 6px 10px rgba(21, 90, 182, 0.4);
+}
+
+main {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.main-title {
+    font-size: 2.8rem;
+    color: #0d47a1;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.importance-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.importance-block {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    background: white;
+    padding: 2.5rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.importance-block:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.importance-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.importance-text {
+    flex: 3;
+}
+
+.importance-text h3 {
+    font-size: 2rem;
+    color: #1a237e;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.importance-text p {
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: #37474f;
+    margin: 0;
+}
+
+.importance-image {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.importance-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(26, 115, 232, 0.25);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .importance-block, .importance-block.reverse {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .importance-image {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}

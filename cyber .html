@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en",lang="hindi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber_Edu.in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="Cyber edu.css">
+    
+</head>
+<body>
+    <header>
+        <h1><span id="typing-effect"></span><span class="typing-cursor"></span></h1>
+    </header>
+
+    <nav>
+        <a href="coures.html" class="nav-button">Courses</a>
+        <a href="about.html" class="nav-button">About</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+    </nav>
+    
+    <main>
+        <!-- New Introduction Text Section -->
+        <section id="intro-text">
+            <p class="intro-paragraph">
+                Welcome to the world of cybersecurity! This field is all about protecting our digital lives, from personal data to critical national infrastructure. Whether you're curious about how hackers think or want to build a career defending data, this is the perfect place to begin your journey.
+            </p>
+        </section>
+        
+        <!-- Main Section with Cybersecurity Fundamentals -->
+        <section id="fundamentals">
+            <h2 class="section-title">Fundamentals of Cybersecurity</h2>
+            <div class="container">
+                <div class="card">
+                    <div class="card-icon">🛡️</div>
+                    <h2>What is Cybersecurity?</h2>
+                    <p>Cybersecurity is the practice of protecting computers, servers, mobile devices, networks, and data from malicious digital attacks, damage, or unauthorized access.</p>
+                    <a href="explore.html" class="card-button">Explore Concepts</a>
+                </div>
+                 <div class="card">
+                     <h2>Ready to Learn?</h2>
+                     <p>Our mission is to make cybersecurity education accessible to everyone. Discover our structured courses designed for all skill levels.</p>
+                     <a href="coures.html" class="card-button">Browse All Courses</a>
+                </div>
+               
+                <div class="card">
+                    <div class="card-icon">⚠️</div>
+                    <h2>Common Cyber Threats</h2>
+                    <p>Learn to recognize key threats like phishing (fake emails), malware (malicious software), and ransomware to keep your personal and professional information secure.</p>
+                     <a href="comon.html" class="card-button">View Threat Database</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section --> 
+        <section id="more-info">
+             <div class="container">
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h2>Why Is It Important?</h2>
+                    <p>In our connected world, everything from your bank account to public utilities relies on secure systems. Cybersecurity protects this data and ensures our digital society can function safely.</p>
+                    <a href="IMPORTAINT.html" class="card-button">See Real-World Cases</a>
+                </div>
+                 <div class="card">
+                     <h2>Have Questions?</h2> 
+                     <p>We're here to help you start your learning journey. Get in touch with our team for guidance and more information.</p>
+                     <a href="contact.html" class="card-button">Contact Us</a>
+                </div>
+             </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cyber_Edu. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Typing Effect -->
+    <script>
+        const textToType = "Intro to Cybersecurity";
+        const typingElement = document.getElementById('typing-effect');
+        let index = 0;
+
+        function type() {
+            if (index < textToType.length) {
+                typingElement.textContent += textToType.charAt(index);
+                index++;
+                setTimeout(type, 100); // Typing speed
+            }
+        }
+        document.addEventListener('DOMContentLoaded', type);
+    </script>
+</body>
+</html>

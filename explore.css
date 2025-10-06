@@ -1,0 +1,262 @@
+/* General Body and Background Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ccd6f6;
+    background-color: #0a192f;
+    background-image: linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header and Navigation Styles (Consistent with other pages) */
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #64ffda, #00c7b5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+/* Add these new styles to concepts_styles.css */
+
+.attack-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.attack-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.attack-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #233554;
+}
+
+.attack-description h4 {
+    font-size: 1.2rem;
+    color: #ccd6f6;
+    margin: 0 0 0.5rem 0;
+}
+
+.attack-description p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #a8b2d1;
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 4rem;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #8892b0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #64ffda;
+    transition: all 0.3s ease-out;
+    transform: translateX(-50%);
+}
+
+.nav-button:hover {
+    color: #64ffda;
+}
+
+.nav-button:hover::after {
+    width: 100%;
+}
+
+/* Main Content Styles for this Page */
+main {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    color: #ccd6f6;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.concepts-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.concept-block {
+    background: rgba(17, 34, 64, 0.75);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 2.5rem;
+    border: 1px solid #233554;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.concept-block:hover {
+    transform: translateY(-5px);
+    border-color: #64ffda;
+}
+
+.concept-block h3 {
+    font-size: 1.8rem;
+    color: #64ffda;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.concept-block p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #a8b2d1;
+    margin-bottom: 1.5rem;
+}
+
+.concept-block ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.concept-block li {
+    font-size: 1rem;
+    color: #a8b2d1;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.concept-block li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #64ffda;
+    font-weight: bold;
+}
+
+.concept-block strong {
+    font-weight: 600;
+    color: #ccd6f6;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: auto;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #8892b0;
+}
+
+/* Add these new styles to concepts_styles.css */
+
+.importance-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* Increased gap for better separation */
+    width: 100%;
+}
+
+.importance-block {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background: rgba(17, 34, 64, 0.75);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #233554;
+}
+
+/* Reverse the order for every other block */
+.importance-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.importance-text {
+    flex: 3; /* Give more space to text */
+}
+
+.importance-text h3 {
+    font-size: 1.8rem;
+    color: #64ffda;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.importance-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #a8b2d1;
+    margin: 0;
+}
+
+.importance-image {
+    flex: 2; /* Give less space to the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.importance-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #233554;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .importance-block, .importance-block.reverse {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .importance-image {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}

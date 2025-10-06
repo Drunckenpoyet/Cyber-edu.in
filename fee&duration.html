@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber_Edu Courses Info</title>
+  <style>
+    /* === Global Styles === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica', sans-serif;
+      background: #f5f7fa url('https://www.transparenttextures.com/patterns/white-wave.png') repeat;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* === Header Section === */
+    header {
+      position: relative;
+      text-align: center;
+      padding: 80px 20px;
+      background: url('https://images.unsplash.com/photo-1581090700227-0c2fa11247c1?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      color: #fff;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); /* overlay */
+      z-index: 0;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00bcd4;
+      text-shadow: 0 0 15px rgba(0,188,212,0.8);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #e0f7fa;
+      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    /* === Navigation Buttons === */
+    .nav-links {
+      text-align: center;
+      margin: 30px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background-color: #00796b;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .nav-links a:hover {
+      background-color: #004d40;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    /* === Info Section === */
+    .info-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .info-card {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .info-card h3 {
+      font-size: 1.8rem;
+      color: #00796b;
+      margin-bottom: 15px;
+    }
+
+    .info-card p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* === Footer === */
+    footer {
+      background-color: #e0f7fa;
+      color: #004d40;
+      text-align: center;
+      padding: 15px 10px;
+      border-top: 2px solid #00bcd4;
+      font-size: 0.95rem;
+      margin-top: 50px;
+    }
+
+    footer span {
+      color: #00796b;
+      font-weight: 600;
+    }
+
+    /* === Responsive === */
+    @media(max-width: 768px){
+      header h1 { font-size: 2.2rem; }
+      .info-card { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Cyber_Edu Courses Info</h1>
+    <p>Learn, Grow, and Protect the Digital World</p>
+  </header>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-links">
+    <a href="cyber .html">🏠 Home</a>
+    <a href="about.html">ℹ️ About Us</a>
+  </div>
+
+  <!-- Info Section -->
+  <section class="info-section">
+
+    <div class="info-card">
+      <h3> OFFLINE Fee Structure</h3>
+      <p>Our courses are priced competitively to ensure quality education is accessible. Fees range from <strong>60K-70K</strong> 
+        For 1.8 years of<strong> Cyber Security Expert</strong>with up-to 70% Discounted Scholarship + Recorded sessions available for lifetime access.</p>
+    </div>
+
+     <div class="info-card">
+      <h3> ONLINE Fee Structure</h3>
+      <p>Our courses are priced competitively to ensure quality education is accessible. Fees range from <strong>30K-35K</strong> 
+       For 1.8 years of<strong> Cyber Security Expert</strong> with up-to 70%-80% Discounted Scholarship +
+        Recorded sessions available for lifetime access. </p>
+    </div>
+
+    <div class="info-card">
+      <h3> Our Spatial Package </h3>
+      <p>In our Spatial Basics of Computer & CSE-Cyber Security Expert program, fees is <strong>75k</strong> 
+         of 24 months duration.</p>
+    </div>
+
+     <div class="info-card">
+      <h3> Our Basics of Computer </h3>
+      <p>In our Spatial Basics of Computer, fees is <strong>3k</strong> 
+         of 3 months duration .</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Duration</h3>
+      <p>Courses are designed to fit your schedule. Duration varies from <strong>9 weeks (short courses)</strong> to <strong>
+        12 weeks (advanced courses)</strong> with flexible online & offline learning with certifications included interview preparation .</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Certifications</h3>
+      <p>On completion, learners receive an official <strong>Cyber_Edu Certification</strong> 
+        recognized by industry professionals, helping boost your career opportunities in cybersecurity.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Hands-On Labs</h3>
+      <p>Gain practical experience through <strong>real-world labs and exercises</strong> 
+        to practice ethical hacking, network security, and system defense techniques.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Support & Mentorship</h3>
+      <p>Our expert instructors provide <strong>personalized mentorship and guidance</strong> 
+        throughout your learning journey, ensuring a deeper understanding of cybersecurity concepts.</p>
+</div>
+
+
+    <div class="info-card">
+      <h3>Add ONs with Our Courses</h3>
+      <p>E-BOOKS/PDF, TOOLS & software access included with every course, along with</p>
+       <p>Communication Skills + ENGLISH (IISEM).</p>
+        <p>INTERVIEW SKILLS.</p>
+         <p>ONLINE + OFFLINE Recorded Sessions FOR lifetime access.</p>
+          <p><strong>100% JOB/INTERVIEW ASSURANCE.</strong></p>
+          
+          
+</div>  
+
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 <span>Cyber_Edu</span> | Innovating Cyber Learning</p>
+  </footer>
+
+</body>
+</html>

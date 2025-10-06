@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Cyber_Edu</title>
+  <style>
+    /* === Reset & Base === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #101820, #1a1a2e);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* === Header Section === */
+    header {
+      background: url('612.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 3rem;
+      color: #00ffcc;
+      text-shadow: 0 0 15px #00ffcc;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffcc; }
+      to { text-shadow: 0 0 25px #00ffcc, 0 0 5px #0ff; }
+    }
+
+    /* === Navigation Buttons === */
+    .nav-btns {
+      text-align: center;
+      margin-top: -40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .nav-btns a {
+      display: inline-block;
+      background: linear-gradient(90deg, #00ffcc, #0077ff);
+      color: #fff;
+      padding: 12px 30px;
+      margin: 10px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 255, 204, 0.3);
+    }
+
+    .nav-btns a:hover {
+      background: linear-gradient(90deg, #0077ff, #00ffcc);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 255, 204, 0.4);
+    }
+
+    /* === About Section === */
+    .about-section {
+      max-width: 900px;
+      margin: 70px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      animation: fadeInUp 1s ease;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .about-section h2 {
+      font-size: 2.2rem;
+      color: #00ffcc;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #f1f1f1;
+      text-align: justify;
+    }
+
+    /* === Footer === */
+    footer {
+      background: #0c0c0c;
+      color: #aaa;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      border-top: 1px solid #00ffcc;
+    }
+
+    footer p span {
+      color: #00ffcc;
+    }
+
+    /* === Responsive === */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.3rem; }
+      .about-section { margin: 40px 20px; padding: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Cyber_Edu</h1>
+  </header>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-btns">
+    <a href="cyber .html">🏠 Back to Home</a>
+    <a href="coures.html">📘 Back to Courses</a>
+  </div>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <strong>Cyber_Edu</strong>, the premier online institute dedicated to equipping 
+      the next generation of cybersecurity professionals with the skills needed to protect 
+      the digital world. In an era where technology drives everything, the demand for 
+      skilled experts has never been higher.
+      <br><br>
+      At Cyber_Edu, we offer cutting-edge courses designed by industry leaders, giving 
+      you a comprehensive understanding of cyber threats, ethical hacking, and secure 
+      systems management. Our flexible learning platform provides both knowledge and 
+      hands-on experience with real-world scenarios.
+      <br><br>
+      Whether you're just starting your cybersecurity journey or enhancing your expertise, 
+      Cyber_Edu empowers you to tackle the ever-evolving digital landscape. 
+      Join us today and become part of a global movement that makes the internet a safer place for all.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 <span>Cyber_Edu</span> | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

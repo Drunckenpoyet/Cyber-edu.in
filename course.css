@@ -1,0 +1,171 @@
+/* Modern 3D Light-themed CSS for courses page */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #d9e2ec, #f0f4f8);
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3.2rem;
+    color: #2e3a59;
+    letter-spacing: 3px;
+    font-weight: 800;
+    user-select: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.navbar button {
+    background: linear-gradient(145deg, #4970ff, #2e4bff);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow:
+        0 2px 8px rgba(41, 52, 98, 0.35),
+        0 10px 20px rgba(53, 75, 255, 0.3);
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.navbar button:hover {
+    background: linear-gradient(145deg, #2e4bff, #4970ff);
+    box-shadow:
+        0 8px 20px rgba(41, 52, 98, 0.5),
+        0 20px 40px rgba(79, 103, 255, 0.5);
+    transform: translateY(-5px) scale(1.05);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+#courses {
+    text-align: center;
+}
+
+#courses h2 {
+    color: #2e3a59;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: 8px 8px 20px rgba(158, 168, 218, 0.6),
+                -8px -8px 20px rgba(255, 255, 255, 0.9);
+    padding: 25px 20px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.4s cubic-bezier(0.47, 1.64, 0.41, 0.8), box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 12px 12px 30px rgba(158, 168, 218, 0.8),
+                -12px -12px 30px rgba(255, 255, 255, 1);
+    transform: translateY(-15px) scale(1.08);
+}
+
+.card img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 18px;
+    box-shadow: 0 8px 15px rgba(158, 168, 218, 0.4);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover img {
+    box-shadow: 0 15px 40px rgba(79, 103, 255, 0.6);
+}
+
+.card button {
+    background: linear-gradient(145deg, #2e4bff, #4970ff);
+    border: none;
+    border-radius: 30px;
+    padding: 14px 0;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 280px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(79, 103, 255, 0.4);
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.card button:hover {
+    box-shadow: 0 12px 35px rgba(79, 103, 255, 0.7);
+    transform: translateY(-5px) scale(1.05);
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555770;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 10px;
+    color: #697094;
+    font-weight: 500;
+    font-size: 1rem;
+    user-select: none;
+}
+
+@media screen and (max-width: 650px) {
+    .course-list {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    header h1 {
+        font-size: 2.6rem;
+    }
+
+    #courses h2 {
+        font-size: 2.4rem;
+        margin-bottom: 25px;
+    }
+}

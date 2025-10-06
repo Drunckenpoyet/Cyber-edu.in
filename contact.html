@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Cyber_Edu</title>
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f9fbfd url('https://www.transparenttextures.com/patterns/white-wall-3.png') repeat;
+      color: #333;
+      line-height: 1.6;
+    }
+
+   
+    header {
+      text-align: center;
+      padding: 70px 20px;
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      color: #fff;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00e0ff;
+      text-shadow: 0 0 20px rgba(0,224,255,0.7);
+    }
+
+    header p {
+      color: #e0f7fa;
+      font-size: 1.2rem;
+    }
+
+    
+    .contact-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-title h2 {
+      color: #00796b;
+      font-size: 2rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .info-box {
+      flex: 1 1 250px;
+      background: #f1fdfc;
+      border: 2px solid #00bcd4;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,188,212,0.3);
+    }
+
+    .info-box h3 {
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+
+    .info-box p, .info-box a {
+      color: #333;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .info-box a:hover {
+      color: #00796b;
+      text-decoration: underline;
+    }
+
+   
+    .contact-form {
+      text-align: center;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 90%;
+      max-width: 500px;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .contact-form input:focus, .contact-form textarea:focus {
+      border-color: #00bcd4;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0,188,212,0.5);
+    }
+
+    .contact-form button {
+      background: #00796b;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #004d40;
+    }
+
+
+    footer {
+      text-align: center;
+      background: #e0f7fa;
+      padding: 15px;
+      color: #004d40;
+      font-weight: 500;
+      border-top: 2px solid #00bcd4;
+    }
+
+ 
+    @media(max-width: 768px){
+      header h1 { font-size: 2.2rem; }
+      .contact-info { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Cyber_Edu</h1>
+    <p>We’d love to hear from you! Reach out anytime.</p>
+  </header>
+
+  <section class="contact-container">
+    <div class="contact-title">
+      <h2>Get in Touch</h2>
+      <p>Feel free to contact us through WhatsApp, Email, or visit our location.</p>
+    </div>
+
+    <div class="contact-info">
+      <div class="info-box">
+        <h3>📱 WhatsApp</h3>
+        <p><a href="https://wa.me/9718501848" target="_blank">Chat with us on WhatsApp</a></p>
+      </div>
+
+      <div class="info-box">
+        <h3>📧 Email</h3>
+        <p><a href="mailto:petersonwilly88@gmail.com">CONNECT2US@.com</a></p>
+      </div>
+
+      <div class="info-box">
+        <h3>📍 Location</h3>
+        <p>Loni Road, Prem Nagar, Ghaziabad, Uttar Pradesh 201102</p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <textarea rows="5" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2024 Cyber_Edu | Designed for Secure Learning
+  </footer>
+
+</body>
+</html>
