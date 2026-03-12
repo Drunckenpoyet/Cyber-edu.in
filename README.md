@@ -1,1 +1,1 @@
-# Cyber-edu.in
+# Cyber-edu.tech
